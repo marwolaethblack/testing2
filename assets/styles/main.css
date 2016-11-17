@@ -1,0 +1,135 @@
+﻿html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#wrapper {
+    height: 100%;
+    position: relative;
+}
+
+header {
+    background-color: rgb(0,184,161);
+    height: 80px;
+}
+
+#logo {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.content {
+    height: 100%;
+}
+
+#login_content {
+    height: 100%;
+    background-color: rgb(0,184,161);
+}
+
+.login_form {
+    border-color: black;
+    position: absolute;
+    top: 15vh;
+}
+
+    .login_form h1 {
+        color: white;
+        font-weight: bold;
+    }
+
+.login_btn {
+    /*background-color: rgb(40,194,201);*/
+    background-color: rgb(153,196,50);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    .login_btn:hover {
+        background-color: #3eb002;
+    }
+
+.login_form form input {
+    margin-top: 7px;
+    height: 40px;
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+    .login_form form input[type="text"],
+    .login_form form input[type="password"] {
+        /*background-color: #eaeaea;*/
+        background-color: white;
+    }
+
+#login_message {
+    margin-top: 150px;
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+#admin_nav {
+    background-color: rgb(91,91,91);
+    height: 100%;
+    width: 180px;
+}
+
+    #admin_nav .selected {
+        font-weight: bold;
+        background-color:darkgray;
+    }
+
+    #admin_nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #admin_nav ul li {
+           /*margin-top:5px;*/
+        }
+
+        #admin_nav ul li a {
+            color: white;
+            margin-left:25px;
+
+        }
+
+.icon {
+    background-position: 0 20px !important;
+    display: inline-block;
+    width: 30px;
+    height: 45px;
+}
+
+.icon-product {
+    background: url('../images/admin_area/icon_product.png') no-repeat top left;
+}
+
+.icon-order{
+    background: url('../images/admin_area/icon_order.png') no-repeat top left;
+}
+
+.icon-admin{
+    background: url('../images/admin_area/icon_admin.png') no-repeat top left;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+    background-color: rgb(41,45,53);
+    text-align: center;
+    color: white;
+}
