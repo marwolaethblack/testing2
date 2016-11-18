@@ -1,7 +1,6 @@
 ﻿html,
 body {
     margin: 0;
-    padding: 0;
     height: 100%;
 }
 
@@ -80,7 +79,7 @@ header {
 
 
 #admin_nav {
-    background-color: rgb(91,91,91);
+    background-color: rgb(52,73,94);
     height: 100%;
     width: 180px;
 }
@@ -124,12 +123,78 @@ header {
     background: url('../images/admin_area/icon_admin.png') no-repeat top left;
 }
 
+.icon-customer{
+    background: url('../images/admin_area/icon_customer.png') no-repeat top left;
+}
+
+.icon-super-admin{
+    background: url('../images/admin_area/icon_super_admin.png') no-repeat top left;
+}
+
+#admin_content{
+    position:absolute;
+    top:80px;
+    left:180px;
+    padding:0;
+}
+
+#admin_content ul {
+    list-style-type:none;
+    clear:both;
+    
+}
+
+#admin_content ul li{
+    text-decoration:none;
+    
+}
+
 .footer {
     position: absolute;
     right: 0;
+    left:0;
     bottom: 0;
     height: 60px;
     background-color: rgb(41,45,53);
     text-align: center;
     color: white;
 }
+
+.admin-table{
+    text-align:center;
+}
+
+.admin-table th{
+    text-align:center;
+}
+
+#products_table tr{
+    border-bottom: 1px solid #d9d9d9;
+
+}
+
+#products_table td{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+#add_product_form{
+    background-color:gray;
+}
+/*SORTING TABLE*/
+th.sorted {
+    background-color: #ffd700;
+}
+
+    th.sorted::after {
+        margin-left: 4px;
+    }
+
+    th.sorted.asc:after {
+        content: '\25BC';
+    }
+
+    th.sorted.desc:after {
+        content: '\25B2';
+    }
+/*SORTING TABLE END*/
