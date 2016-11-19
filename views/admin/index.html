@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Admin Content Managment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
+    <script type="text/javascript" src="js/prefixfree.min.js"></script>
+    
+</head>
+<!-- End of head start of body -->
+
+<body>
+    <header>
+        <div class="row titlelogo">
+            <p class="logo col-xs-4">JaPeGe</p>
+        </div>
+    </header>
+    <!-- header end -->
+    <div class="row">
+        <div class="col-xs-2 col">
+            <nav class="admin_nav">
+                <ul>
+                    <li class="">
+                        <a href=>
+                            <i class="icon icon-product"></i> Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="icon icon-order"></i> Orders
+                        </a>
+                    </li>
+                    <li>
+                        <a href=>
+                            <i class="icon icon-customer"></i> Customers
+                        </a>
+                    </li>
+                    <li>
+                        <a href>
+                            <i class="icon icon-admin"></i> Admins
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="admin_content" class="col-xs-10">
+            <div class="row button_row">
+
+                <div class="back_button col-xs-3">
+                <a href="#">
+                    <i class="icon-arrow"></i>
+                </a>
+                       
+                </div>
+                
+                <h2 class="col-xs-3">Products</h2>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>Change product details</legend>
+                    <div class="row">
+                        <div class="form-group col-sm-5 form_col1">
+                            <label class="control-label" for="input_name">Name</label>
+                            <input type="text" class="form-control" id="input_name" placeholder="Name of the product">
+                            <label for="input_name">Category</label>
+                            <input type="text" class="form-control" id="input_category" placeholder="Category of the product">
+                            <label class="control-label" for="input_desc">Description</label>
+                            <textarea class="form-control" id="input_desc" rows="10"></textarea>
+                        </div>
+                        <div class="form-group col-sm-6 col-sm-offset-1 form_col2">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <label class="control-label" for="input_id">ID</label>
+                                    <input type="text" class="form-control" id="input_id" placeholder="ID">
+                                </div>
+                                <div class="col-sm-5">
+                                    <label class="control-label" for="input_price">Price</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon1">$</span>
+                                        <input type="text" id="input_price" class="form-control" placeholder="Price" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <label class="control-label" for="input_sold">Sold</label>
+                                    <input type="text" class="form-control" id="input_sold" placeholder="Amount of sold items">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="control-label" for="input_quantity">Quantity</label>
+                                    <div class="input-group" ">
+                                        <input type="text " id="input_quantity " class="form-control " placeholder="Amount in stock " aria-describedby="basic-addon1 ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-sm-3 ">
+                                    <label class="control-label " for="input_rating ">Rating</label>
+                                    <input type="text " class="form-control " id="input_rating " placeholder="Average Rating ">
+                                </div>
+                                 <div class="col-sm-6 ">
+                                        <img class="productimg" src="http://eprints.lib.hokudai.ac.jp/image/haskap256x192.jpg">
+                                        <input  class="fileupload" type="file" name=" ">
+
+
+
+                                        <a href="<?php echo site_url( 'admin/add_product'); ?>">
+                                        <button type="button" class=" btn btn-primary btn-lg"><span class="glyphicon glyphicon-pencil">Edit</span></button>
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="navbar navbar-fixed-bottom footer ">
+            <div class="content ">
+                <div class="col-lg-12 ">
+                    <span class="footer ">Copyright
+                    <?php echo strftime("%Y ",time()); ?> JaPege</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
+<script src="js/myscript.js "></script>
+</body>
+
+</html>
