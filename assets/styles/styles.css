@@ -1,0 +1,200 @@
+
+/*header start*/
+
+.titlelogo
+{
+	background: #0CCAD6;
+
+}
+
+p.logo
+{
+	padding-left: 50px;
+	padding-top: 10px;
+	color: white;
+	font-size: 4em;
+	
+}
+/* header end*/
+
+
+/*body start*/
+body {
+	position: relative;
+	padding-bottom: 0px;
+	overflow-x: hidden;
+	
+	
+}
+/*body end*/
+
+
+
+
+
+/* navigation */
+.col {
+	background-color: rgb(52,73,94);
+	min-height: 800px;
+    height: auto !important;
+    height: 800px;
+
+}
+
+
+
+
+.icon-arrow{
+	display: inline-block;
+	background-repeat: no-repeat;
+	height: 50px;
+	position: relative;
+	top: 0;
+	width: 64px;
+	background-image: url('../arrow_back.png');
+}
+
+@media screen and (max-width: 750px) and (min-width: 0px) {
+    .col {
+      height: 1250px;
+      min-height: 1250px
+    }
+}
+
+
+.admin_nav {
+    
+    height: 100%;
+    border-box;
+
+
+}
+
+    .admin_nav .selected {
+        font-weight: bold;
+        background-color:darkgray;
+    }
+
+    .admin_nav ul {
+        list-style-type: none;
+        padding: 0;
+
+    }
+
+    .admin_nav ul li {
+           /*margin-top:5px;*/
+        }
+
+        .admin_nav ul li a {
+            color: white;
+            
+
+        }
+
+/* navigation end*/
+
+/*buttons over form start*/
+.back_button{
+	background: transparent;
+	border: none;
+	width: 65px !important;
+	margin-right: 0;
+}
+
+.row h2{
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 20px;
+
+
+}
+
+.button_row{
+	background: #f5f5ef;
+	border-bottom: 4px solid #ebebe0;
+	margin-right: -15px;
+
+	
+}
+
+/*buttons over form end*/
+
+
+/*form start*/
+
+form {
+	margin-top: 30px;
+}
+
+.form_col1
+{
+	margin-bottom: 10px;
+}
+
+.form_col2
+{
+	margin-bottom: 50px;
+
+}
+
+label.control-label{
+	padding-top: 5px;
+}
+
+span .glyphicon {
+	padding-left: 20px;
+}
+
+.btn-primary.btn-lg{
+	background: #3FC063;
+	border: none;
+	
+	margin: 15px 10px 10px 80px;
+	height: 50px;
+	width: 150px;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	right: 0;
+	margin-right: 50px;
+	box-shadow: 2px 2px #2c8746;
+}
+.btn-primary.btn-lg:hover {
+	background: #2c8746;
+	border: none;
+}
+
+.productimg
+{
+	margin-top: 30px;
+}
+
+label, input {
+	font-family: 'Open Sans', sans-serif;
+}
+/*form end*/
+
+
+/* footer */
+.footer
+{
+	background-color: rgb(41,45,53);
+	color: white;
+	text-align: center;	 
+ 	
+}
+
+span.footer
+{
+	text-align: center;
+}
+
+/* footer */
+
+#admin_content {
+	/*background: white;*/
+	height: 700px;
+}
+
+
+
+
